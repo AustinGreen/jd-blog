@@ -1,0 +1,71 @@
+/*
+ * Main navigation component
+ *
+ * styles for site-wide nav
+ */
+
+.navbar {
+	min-height: 75px;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 0;
+
+  a {
+    transition: $clean-transition;
+  }
+}
+
+.navbar-default {
+  background-color: transparent;
+}
+
+.navbar-fixed-top {
+  border-bottom: 0;
+}
+
+/* Logo */
+
+.navbar-brand {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media screen and (max-width: $screen-md) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.container-fluid>.navbar-header {
+  margin-left: 5%;
+}
+
+/* Nav links */
+
+.nav>li:first-child {
+    margin-top: 100px;
+}
+
+.nav>li>a {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+
+  @media screen and (max-width: $screen-md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.navbar-left {
+  margin-left: 50px;
+}
+
+.nav.navbar-right:last-child {
+  margin-right: 5%;
+}
+
+/* Collapse button */
+
+.navbar-toggle {
+  margin-top: 20.5px;
+}
