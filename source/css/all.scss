@@ -55,3 +55,7 @@ body {
 	margin-top: 400px;
 	@include transform(translateY(-50%));
 }
+
+.portfolio .grid--item {
+	padding-bottom: 20px;
+}
