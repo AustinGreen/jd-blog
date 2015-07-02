@@ -26,3 +26,27 @@ body {
 .grid--item {
   padding: 3px;
 }
+
+.nav-fixed {
+	position: fixed;
+	top: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: $zIndex-front;
+
+	li {
+		padding: 10px;
+	}
+
+	a {
+		color: $black;
+	}
+}
+
+.nav-fixed--left {
+	left: 50px;
+}
+
+.nav-fixed--right {
+	right: 50px;
+}
