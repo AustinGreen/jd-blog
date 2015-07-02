@@ -59,3 +59,11 @@ body {
 .portfolio .grid--item {
 	padding-bottom: 20px;
 }
+
+.press-gallery {
+	margin-top: 200px;
+
+	&> div > div{
+		padding: 15px;
+	}
+}
