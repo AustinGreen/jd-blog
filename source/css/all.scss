@@ -66,8 +66,22 @@ body {
 	@include transform(translateY(-50%));
 }
 
-.portfolio .grid--item {
+.portfolio .grid--item,
+.life-n-style .grid--item, {
 	padding-bottom: 20px;
+
+	img {
+	  width: 100%;
+	}
+
+	figcaption {
+		position: absolute;
+		top: 0;
+		right: -25px;
+		text-transform: uppercase;
+		@include transform(rotate(90deg) translateX(104%));
+		@include transform-origin(right top 0);
+	}
 }
 
 .press-gallery {
