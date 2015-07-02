@@ -10,9 +10,11 @@
       <!-- Use title if it's in the page YAML frontmatter -->
       <title><%= current_page.data.title || "Jordan Denzel" %></title>
       
-      <%= stylesheet_link_tag "all" %>
+      <%= stylesheet_link_tag "all", "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" %>
+      <script src="//use.typekit.net/wqa7yuy.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
     </head>
-    <body class="<%= page_classes %>">
+    <body class="<%= page_classes %> tk-proxima-nova">
       <nav class="nav-fixed nav-fixed--left">  
         <ul>
           <li><a href="/">Home</a></li>
@@ -23,14 +25,51 @@
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
-
+      <nav class="nav-fixed nav-fixed--center">  
+        <a href="/" class="brand">Home</a>
+      </nav>
       <nav class="nav-fixed nav-fixed--right">  
         <ul>
-          <li><a href="#">Tumblr</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Youtube</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
+          <li>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-tumblr fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-youtube fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
         </ul>
       </nav>
       <%= yield %>

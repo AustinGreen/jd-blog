@@ -40,11 +40,21 @@ body {
 
 	a {
 		color: $black;
+
+		&:hover {
+			color: $white;
+		}
 	}
 }
 
 .nav-fixed--left {
 	left: 50px;
+}
+
+.nav-fixed--center {
+	top: 25px;
+	margin-left: 50vw;
+	@include transform(translateX(-50%));
 }
 
 .nav-fixed--right {
