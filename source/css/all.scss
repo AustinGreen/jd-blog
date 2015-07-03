@@ -15,10 +15,17 @@ body {
 .bg-hero {
 	top: 0;
 	height: 800px;
-	background-image: url('../img/bg-home.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	@include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
+}
+
+.index .bg-hero {
+  background-image: url('../img/bg-home.jpg');
+}
+
+.about .bg-hero {
+  background-image: url('../img/bg-about.jpg');
 }
 
 .marketing {
@@ -109,6 +116,7 @@ body {
 
 .contact .form-control {
   color: #000;
+  background-color: #f8f8f8;
   border: 1px solid #000;
   text-transform: uppercase;
   border-radius: 0;
