@@ -8,13 +8,15 @@
 @import "partials/navs";
 
 body {
+	background-color: #f8f8f8;
 	padding-bottom: 100px;
 }
 
 .bg-hero {
 	top: 0;
 	height: 800px;
-	background-image: url('https://download.unsplash.com/photo-1433463002246-9d846c114eb8');
+	background-image: url('../img/bg-home.jpg');
+	background-size: cover;
 	background-attachment: fixed;
 	@include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
 }
@@ -49,6 +51,10 @@ body {
 
 .nav-fixed--left {
 	left: 50px;
+
+	li {
+		padding: 15px;
+	}
 }
 
 .nav-fixed--center {
