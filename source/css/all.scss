@@ -1,23 +1,53 @@
+// ==========================================================================
+// Compass
+// ==========================================================================
 @import "compass";
-@import "partials/reset";
+
+// ==========================================================================
+// Reset
+// ==========================================================================
+@import "base/reset";
+
+// ==========================================================================
+// Bootstrap
+// ==========================================================================
 @import "bootstrap";
-@import "partials/config";
-@import "partials/utilities";
-@import "partials/extends";
-@import "partials/base";
-@import "partials/navs";
+
+// ==========================================================================
+// Utilities
+// ==========================================================================
+@import "utilities/index";
+
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+@import "base/index";
+
+// ==========================================================================
+// Layout Styles
+// ==========================================================================
+@import "layout/index";
+
+// ==========================================================================
+// Modules
+// ==========================================================================
+@import "modules/index";
+
+// ==========================================================================
+// States
+// ==========================================================================
+@import "states/index";
 
 body {
-	background-color: #f8f8f8;
-	padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .bg-hero {
-	top: 0;
-	height: 800px;
-	background-size: cover;
-	background-attachment: fixed;
-	@include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
+  top: 0;
+  height: 800px;
+  background-size: cover;
+  background-attachment: fixed;
+  @include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
 }
 
 .index .bg-hero {
@@ -29,7 +59,7 @@ body {
 }
 
 .marketing {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
 .grid--item {
@@ -37,81 +67,81 @@ body {
 }
 
 .nav-fixed {
-	position: fixed;
-	top: 100px;
-	text-align: center;
-	text-transform: uppercase;
-	z-index: $zIndex-front;
+  position: fixed;
+  top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: $zIndex-front;
 
-	li {
-		padding: 10px;
-	}
+  li {
+    padding: 10px;
+  }
 
-	a {
-		color: $black;
+  a {
+    color: $black;
 
-		&:hover {
-			color: $white;
-		}
-	}
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 .nav-fixed--left {
-	left: 50px;
+  left: 50px;
 
-	li {
-		padding: 15px;
-	}
+  li {
+    padding: 15px;
+  }
 }
 
 .nav-fixed--center {
-	top: 25px;
-	margin-left: 50vw;
-	@include transform(translateX(-50%));
+  top: 25px;
+  margin-left: 50vw;
+  @include transform(translateX(-50%));
 }
 
 .nav-fixed--right {
-	right: 50px;
+  right: 50px;
 }
 
 .vertical-center {
-	margin-top: 400px;
-	@include transform(translateY(-50%));
+  margin-top: 400px;
+  @include transform(translateY(-50%));
 }
 
 .portfolio .grid--item,
 .life-n-style .grid--item, {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 
-	img {
-	  width: 100%;
-	}
+  img {
+    width: 100%;
+  }
 
-	figcaption {
-		position: absolute;
-		top: 0;
-		right: -25px;
-		text-transform: uppercase;
-		@include transform(rotate(90deg) translateX(104%));
-		@include transform-origin(right top 0);
-	}
+  figcaption {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    text-transform: uppercase;
+    @include transform(rotate(90deg) translateX(104%));
+    @include transform-origin(right top 0);
+  }
 }
 
 .press-gallery {
-	margin-top: 200px;
+  margin-top: 200px;
 
-	&> div > div{
-		padding: 15px;
-	}
+  &> div > div{
+    padding: 15px;
+  }
 }
 
 .contact .btn {
-	background-color: #000;
-	color: white;
-	border-radius: 0;
-	text-transform: uppercase;
-	padding: 12px 24px;
-	border: 0;
+  background-color: #000;
+  color: white;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: 0;
 }
 
 .contact .form-control {
@@ -125,5 +155,5 @@ body {
 
 }
 input[placeholder] {
-	color: #000;
+  color: #000;
 }
