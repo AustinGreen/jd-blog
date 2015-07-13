@@ -67,7 +67,7 @@ body {
 }
 
 .nav-fixed {
-  position: fixed;
+  position: absolute;
   top: 100px;
   text-align: center;
   text-transform: uppercase;
@@ -102,6 +102,10 @@ body {
 
 .nav-fixed--right {
   right: 50px;
+
+  a:hover {
+    color: palette(grey);
+  }
 }
 
 .vertical-center {
@@ -125,6 +129,10 @@ body {
     @include transform(rotate(90deg) translateX(104%));
     @include transform-origin(right top 0);
   }
+}
+
+.featurette-image {
+  margin-bottom: 0;
 }
 
 .press-gallery {
