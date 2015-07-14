@@ -38,46 +38,13 @@
 // ==========================================================================
 @import "states/index";
 
-body {
-  padding-bottom: 20px;
-}
-
-body.about {
-  padding-bottom: 0px;
-}
-
-.bg-hero {
-  top: 0;
-  height: 800px;
-  background-size: cover;
-  background-attachment: fixed;
-  @include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
-}
-
-.bg-hero--full-height {
-  @extend .bg-hero;
-  height: 100vh;
-}
-
-.index .bg-hero {
-  background-image: url('../img/bg-home.jpg');
-}
-
-.about .bg-hero {
-  background-image: url('../img/bg-about.jpg');
-}
-
 .marketing {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .grid--item {
   padding: 3px;
-}
-
-.vertical-center {
-  margin-top: 400px;
-  @include transform(translateY(-50%));
 }
 
 .portfolio .grid--item,
@@ -127,8 +94,8 @@ body.about {
   border-radius: 0;
   -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0.0);
   box-shadow: inset 0 0 0 rgba(0,0,0,0.0);
-
 }
+
 input[placeholder] {
   color: #000;
 }

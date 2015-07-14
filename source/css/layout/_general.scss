@@ -1,0 +1,4 @@
+.vertical-center {
+  margin-top: 400px;
+  @include transform(translateY(-50%));
+}
