@@ -10,9 +10,8 @@ body.curtain {
   position: relative;
   padding: 3em 5% 0;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 50%;
   background-position: center center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
 }
 .curtain-block {
   height: 100vh;

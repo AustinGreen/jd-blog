@@ -19,17 +19,17 @@
 
 @mixin mq($break) {
   @if $break == "small" {
-    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    @media (max-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
       @content;
     }
   }
   @else if $break == "medium" {
-    @media (min-width: $brkpoint-md + 1) {
+    @media (max-width: $brkpoint-md + 1) {
       @content;
     }
   }
   @else if $break == "large" {
-    @media (min-width: $brkpoint-lg) {
+    @media (max-width: $brkpoint-lg) {
       @content;
     }
   }

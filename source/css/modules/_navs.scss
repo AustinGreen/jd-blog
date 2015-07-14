@@ -69,3 +69,54 @@
 .navbar-toggle {
   margin-top: 20.5px;
 }
+
+.nav-fixed {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: $zIndex-front;
+
+  li {
+    padding: 10px;
+  }
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.nav-fixed--left {
+  left: 50px;
+
+  li {
+    padding: 15px;
+  }
+
+  @include mq(medium) {
+    left: 10px;
+    text-align: left;
+  }  
+}
+
+.nav-fixed--center {
+  top: 25px;
+  margin-left: 50vw;
+  @include transform(translateX(-50%));
+}
+
+.nav-fixed--right {
+  right: 50px;
+
+  a:hover {
+    color: palette(grey);
+  }
+
+  @include mq(medium) {
+    right: 10px;
+  }  
+}
