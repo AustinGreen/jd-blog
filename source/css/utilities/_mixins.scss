@@ -19,7 +19,7 @@
 
 @mixin mq($break) {
   @if $break == "small" {
-    @media (max-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    @media (max-width: $brkpoint-sm) {
       @content;
     }
   }
@@ -35,6 +35,27 @@
   }
    @else {
    	@error "Whoops! No value could be retrieved for `#{$break}`. "
+  }
+}
+
+@mixin mqmin($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint-md + 1) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+   @else {
+    @error "Whoops! No value could be retrieved for `#{$break}`. "
   }
 }
 

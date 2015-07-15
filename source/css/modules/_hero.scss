@@ -4,11 +4,17 @@
   background-size: cover;
   background-attachment: fixed;
   @include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
+  @include mq(small) {
+		height: 415px;
+  }  
 }
 
 .bg-hero--full-height {
   @extend .bg-hero;
   height: 100vh;
+  @include mq(small) {
+  	height: 415px;
+  }  
 }
 
 .index .bg-hero {

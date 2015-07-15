@@ -1,12 +1,17 @@
+.index .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 950px;
+}
+
 .vertical-center {
   margin-top: 400px;
   @include transform(translateY(-50%));
-}
 
-.about .vertical-center {
-	@include mq(small) {
-	  margin-top: 65em;
-	}  
+  @include mq(small) {
+  	@include transform(translateY(0));
+    margin-top: 435px;
+  }  
 }
 
 .mobile-padding {

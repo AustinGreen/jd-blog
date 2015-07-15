@@ -1,0 +1,38 @@
+.grid--item {
+  padding: 3px;
+}
+
+.index .grid--item  img {
+  margin-bottom: 0;
+}
+
+.portfolio .grid--item,
+.life-n-style .grid--item {
+  padding: 20px;
+}
+
+.portfolio .grid--item,
+.life-n-style .grid--item {
+  padding-bottom: 0;
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    text-transform: uppercase;
+    @include transform(rotate(90deg) translateX(104%));
+    @include transform-origin(right top 0);
+  }
+}
+
+// temp.
+.grid--item figure {
+  @include mqmin(medium) {
+    height: 500px;
+    overflow: hidden;  
+  }  
+}
