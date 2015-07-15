@@ -63,7 +63,7 @@
 
   figcaption {
     position: absolute;
-    top: 0;
+    top: 20px;
     right: -25px;
     text-transform: uppercase;
     @include transform(rotate(90deg) translateX(104%));
