@@ -8,14 +8,14 @@
   margin-top: 400px;
   @include transform(translateY(-50%));
 
-  @include mq(small) {
+  @include mq(medium) {
   	@include transform(translateY(0));
     margin-top: 435px;
   }  
 }
 
 .mobile-padding {
-	@include mq(small) {
+	@include mq(medium) {
 	  margin-top: 250px;
 	}  
 }
