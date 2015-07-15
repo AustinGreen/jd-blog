@@ -2,3 +2,15 @@
   margin-top: 400px;
   @include transform(translateY(-50%));
 }
+
+.about .vertical-center {
+	@include mq(small) {
+	  margin-top: 65em;
+	}  
+}
+
+.mobile-padding {
+	@include mq(small) {
+	  margin-top: 250px;
+	}  
+}
