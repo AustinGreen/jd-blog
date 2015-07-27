@@ -6,7 +6,7 @@
   @include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
   @include mq(medium) {
 		height: 415px;
-		background-position: 83% 50%;
+		background-position: 43% 50%;
   }  
 }
 
@@ -15,7 +15,14 @@
   height: 100vh;
   @include mq(medium) {
   	height: 415px;
-  }  
+    background-position: 95% 50%;
+  }
+  @media only screen 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) {
+      height: 125vh;
+      background-position: 80% 50%;
+    }
 }
 
 .index .bg-hero {
