@@ -5,7 +5,7 @@
   background-attachment: fixed;
   @include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
   @include mq(medium) {
-		height: 415px;
+		height: 100vh;
 		background-position: 43% 50%;
   }  
 }
@@ -31,4 +31,33 @@
 
 .about .bg-hero {
   background-image: url('../img/bg-about.jpg');
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+  color: #D3D3D3;
+  @include animation-properties((animation-delay: 3s));  
+
+  div {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+  }
+}
+.fa-angle-down {
+  transition: all .2s ease-in-out;
+}
+
+.fa-angle-down:hover {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+   -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  cursor: pointer;
+  color: whitesmoke;
 }
