@@ -77,6 +77,10 @@
   text-transform: uppercase;
   z-index: $zIndex-front;
 
+  @include mq(medium) {
+    top: 5%;
+  } 
+
   li {
     padding: 10px;
   }
